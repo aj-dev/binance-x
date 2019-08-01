@@ -1,28 +1,63 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="antialiased p-4 text-gray-900">
+    <tabs/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import tabs from './components/tabs.vue';
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    name: 'app',
+
+    components: {
+        tabs
+    },
+
+    mounted() {
+        this.$router.push('/portfolio');
+    }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 40rem;
+}
+
+svg {
+  transform: rotate(0);
+}
+
+svg.animate {
+  animation: spin calc(var(--duration) * 1s) infinite linear;
+}
+
+.spin-slow {
+  --duration: 0.7;
+}
+
+.spin-fast {
+  --duration: 0.5;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.title-case {
+  text-transform: lowercase;
+}
+
+.title-case::first-letter {
+  text-transform: uppercase;
 }
 </style>
