@@ -48,18 +48,18 @@
 
 <script>
 import api from '../services/api';
-import refreshBtn from './common/refresh-btn';
-import loader from './common/loader';
-import search from './common/search';
+// import refreshBtn from './common/refresh-btn';
+// import loader from './common/loader';
+// import search from './common/search';
 import sortMixin from './mixins/sort';
 
 export default {
     name: 'positions',
 
     components: {
-        refreshBtn,
-        loader,
-        search
+        // refreshBtn,
+        // loader,
+        // search
     },
 
     mixins: [sortMixin],
