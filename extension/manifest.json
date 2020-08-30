@@ -5,8 +5,7 @@
     "permissions": [
         "storage",
         "declarativeContent",
-        "https://api.binance.com/",
-        "https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+        "https://api.binance.com/"
     ],
     "background": {
         "scripts": [

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import app from './app.vue';
 import store from './services/store';
 import router from './services/router';
+import './assets/styles/index.css';
 
 function requireAll(r) {
     r.keys().forEach(r);
