@@ -1,6 +1,6 @@
 {
     "name": "Cryptofoli",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Binance exchange portfolio management app",
     "permissions": [
         "storage",
