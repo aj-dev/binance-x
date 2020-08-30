@@ -17,12 +17,10 @@ Vue.config.productionTip = false;
 
 Vue.filter('currency', (value, symbol) => {
     if (!value) {
-        return '';
+        return value;
     }
 
-    const numberFormat = new Intl.NumberFormat(navigator.language, { style: 'currency', currency: symbol, minimumFractionDigits: 8 });
-
-    return numberFormat.format(value);
+    return new Intl.NumberFormat(navigator.language, { style: 'currency', currency: symbol, minimumFractionDigits: 8 }).format(value);
 });
 
 new Vue({
