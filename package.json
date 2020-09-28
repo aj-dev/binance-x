@@ -13,7 +13,7 @@
     "dependencies": {
         "binance-api-node": "0.9.11",
         "vue": "2.6.12",
-        "vue-router": "3.4.3",
+        "vue-router": "3.4.5",
         "vuex": "^3.5.1",
         "vuex-persist": "^2.2.0"
     },
